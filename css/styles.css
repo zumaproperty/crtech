@@ -99,7 +99,7 @@ p { margin: 0 0 1em; }
   gap: 10px;
   height: 56px;
 }
-.nav__logo img { height: 100%; width: auto; }
+.nav__logo img { height: 140%; width: auto; }
 
 .nav__menu {
   list-style: none;
