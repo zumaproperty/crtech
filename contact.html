@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Castle Rock Tech</title>
+  <meta name="description" content="Get in touch with Castle Rock Tech. We'll reply within one business day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__logo" href="index.html" aria-label="Castle Rock Tech home">
+          <img src="assets/images/CRTLogo_1.png" alt="Castle Rock Tech" />
+        </a>
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+        <ul class="nav__menu">
+          <li class="has-dropdown">
+            <a href="services.html" class="nav__link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="dropdown" role="menu">
+              <li><a href="services.html#marketing-design">Marketing &amp; Design</a></li>
+              <li><a href="services.html#hosting-maintenance">Hosting &amp; Maintenance</a></li>
+              <li><a href="services.html#ai-solutions">AI Solutions</a></li>
+              <li><a href="services.html#sales-enablement">Sales Enablement</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link is-active">Contact</a></li>
+          <li><a href="contact.html" class="nav__cta">Start a Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--compact">
+      <div class="container">
+        <div class="hero__inner">
+          <span class="hero__eyebrow">Contact</span>
+          <h1>Let's build <span class="accent">something solid.</span></h1>
+          <p class="hero__lead">
+            Tell us a bit about your project — we'll reply within one business day with next steps,
+            or a friendly "this isn't our wheelhouse" if it isn't.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <form class="form" data-form="contact" novalidate>
+            <div class="form__fields">
+              <div class="form__row">
+                <div>
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" required autocomplete="name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form__row">
+                <div>
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+                <div>
+                  <label for="service">Interested In</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service…</option>
+                    <option>Marketing &amp; Design</option>
+                    <option>Hosting &amp; Maintenance</option>
+                    <option>AI Solutions</option>
+                    <option>Sales Enablement</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your goals, timeline, and what you've already tried."></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn--primary">Send Message</button>
+              </div>
+            </div>
+            <div class="form__success">
+              <strong>Thanks — message received.</strong><br />
+              We'll be in touch within one business day. (This is a concept site — no email is actually sent.)
+            </div>
+          </form>
+
+          <aside class="contact-info">
+            <div class="contact-info__item">
+              <div class="contact-info__label">Email</div>
+              <div class="contact-info__value">hello@castlerocktech.com</div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__label">Phone</div>
+              <div class="contact-info__value">(303) 555-0140</div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__label">Office</div>
+              <div class="contact-info__value">Castle Rock, Colorado<br /><span class="muted">By appointment</span></div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__label">Hours</div>
+              <div class="contact-info__value">Mon–Fri · 9am–5pm MT</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/CRTLogo_1.png" alt="Castle Rock Tech" />
+          <p>Solid as the rock. Built for tomorrow.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#marketing-design">Marketing &amp; Design</a></li>
+            <li><a href="services.html#hosting-maintenance">Hosting &amp; Maintenance</a></li>
+            <li><a href="services.html#ai-solutions">AI Solutions</a></li>
+            <li><a href="services.html#sales-enablement">Sales Enablement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul>
+            <li>hello@castlerocktech.com</li>
+            <li>Castle Rock, Colorado</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Castle Rock Tech. All rights reserved.</span>
+        <span>Concept site</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
