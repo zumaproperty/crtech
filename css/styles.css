@@ -144,64 +144,6 @@ p { margin: 0 0 1em; }
 }
 .nav__cta:hover { background: var(--rust-600); color: var(--white); }
 
-/* Dropdown */
-.has-dropdown { position: relative; }
-
-.dropdown-toggle {
-  background: none;
-  border: 0;
-  font: inherit;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.dropdown-toggle::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg) translateY(-2px);
-  transition: transform 0.2s ease;
-}
-
-.dropdown {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  min-width: 240px;
-  background: var(--white);
-  border: 1px solid rgba(15, 27, 45, 0.08);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  list-style: none;
-  margin: 0;
-  padding: 8px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-6px);
-  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
-}
-.dropdown a {
-  display: block;
-  padding: 10px 12px;
-  border-radius: var(--radius-sm);
-  color: var(--navy-800);
-  font-size: 0.95rem;
-}
-.dropdown a:hover { background: var(--cream-100); color: var(--rust-600); }
-
-.has-dropdown:hover > .dropdown,
-.has-dropdown:focus-within > .dropdown,
-.has-dropdown.is-open > .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.has-dropdown:hover > .dropdown-toggle::after,
-.has-dropdown.is-open > .dropdown-toggle::after { transform: rotate(-135deg) translateY(2px); }
-
 /* Mobile toggle */
 .nav__toggle {
   display: none;
@@ -230,7 +172,7 @@ p { margin: 0 0 1em; }
 .nav__toggle span::before { top: -7px; }
 .nav__toggle span::after { top: 7px; }
 
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
   .nav__toggle { display: block; }
   .nav__menu {
     position: fixed;
@@ -246,21 +188,7 @@ p { margin: 0 0 1em; }
     transition: transform 0.25s ease;
   }
   .nav.is-open .nav__menu { transform: translateY(0); }
-  .nav__link, .dropdown-toggle, .nav__cta { width: 100%; text-align: left; }
-  .dropdown {
-    position: static;
-    box-shadow: none;
-    border: 0;
-    background: var(--cream-50);
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 8px;
-    transition: max-height 0.25s ease, padding 0.25s ease;
-  }
-  .has-dropdown.is-open > .dropdown { max-height: 400px; padding: 8px; }
+  .nav__link, .nav__cta { width: 100%; text-align: left; }
 }
 
 /* ----- Buttons ----- */
