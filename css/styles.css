@@ -23,7 +23,7 @@
   --radius-md: 10px;
   --radius-lg: 18px;
   --max-w: 1200px;
-  --header-h: 185px;
+  --header-h: 205px;
   --font-display: 'Bebas Neue', 'Oswald', 'Arial Narrow', sans-serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -82,7 +82,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid rgba(15, 27, 45, 0.08);
   height: var(--header-h);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .nav {
