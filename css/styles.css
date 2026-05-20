@@ -621,6 +621,9 @@ p { margin: 0 0 1em; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .work-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.work-card__link { display: flex; flex-direction: column; color: inherit; height: 100%; }
+.work-card__link:hover { color: inherit; }
+.work-card__link:hover h3 { color: var(--rust-500); }
 .work-card__media {
   aspect-ratio: 16 / 9;
   background: linear-gradient(135deg, var(--navy-800), var(--rust-500));
