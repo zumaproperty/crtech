@@ -3,7 +3,7 @@
 // https://analytics.google.com → Admin → Data Streams → Web → Measurement ID.
 // Until it's replaced, this file is a no-op and no data is sent.
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX';
+  var GA_ID = 'G-W497KT50X7';
   if (!GA_ID || GA_ID.indexOf('XXXXXXXXXX') !== -1) return;
 
   var s = document.createElement('script');
