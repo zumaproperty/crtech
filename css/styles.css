@@ -431,6 +431,15 @@ p { margin: 0 0 1em; }
 }
 .form.is-submitted .form__success { display: block; }
 .form.is-submitted .form__fields { display: none; }
+.form__error {
+  margin-top: 12px;
+  padding: 16px;
+  background: rgba(198,93,59,0.06);
+  border-left: 3px solid #a63b3b;
+  border-radius: var(--radius-sm);
+  color: var(--navy-800);
+}
+.form__error a { color: var(--rust-500); }
 
 .contact-info { display: grid; gap: 24px; }
 .contact-info__item {

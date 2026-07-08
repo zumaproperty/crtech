@@ -48,7 +48,11 @@
     <section class="section">
       <div class="container">
         <div class="contact-grid">
-          <form class="form" data-form="contact" novalidate>
+          <form class="form" data-form="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="visually-hidden" aria-hidden="true" style="position:absolute;left:-9999px;">
+              <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
             <div class="form__fields">
               <div class="form__row">
                 <div>
@@ -86,7 +90,11 @@
             </div>
             <div class="form__success">
               <strong>Thanks — message received.</strong><br />
-              We'll be in touch within one business day. (This is a concept site — no email is actually sent.)
+              We'll be in touch within one business day.
+            </div>
+            <div class="form__error" hidden>
+              <strong>Something went wrong sending your message.</strong><br />
+              Please email <a href="mailto:hello@crtech.ai">hello@crtech.ai</a> or call 720.925.2986.
             </div>
           </form>
 
