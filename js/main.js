@@ -11,9 +11,31 @@
     });
   }
 
-  // Close mobile menu when a link is clicked
+  // Services dropdown: click / keyboard toggle for aria-expanded (hover handled in CSS)
+  document.querySelectorAll('.has-dropdown').forEach((dd) => {
+    const trigger = dd.querySelector('.nav__link--dropdown');
+    if (!trigger) return;
+    trigger.addEventListener('click', (e) => {
+      if (window.matchMedia('(max-width: 1080px)').matches) {
+        e.preventDefault();
+        const open = dd.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', String(open));
+      }
+    });
+  });
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.has-dropdown.is-open').forEach((dd) => {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('is-open');
+        dd.querySelector('.nav__link--dropdown')?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Close mobile menu when a leaf link is clicked (not the dropdown trigger)
   document.querySelectorAll('.nav__menu a').forEach((a) => {
     a.addEventListener('click', () => {
+      if (a.classList.contains('nav__link--dropdown')) return;
       nav?.classList.remove('is-open');
       toggle?.setAttribute('aria-expanded', 'false');
     });

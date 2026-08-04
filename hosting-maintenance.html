@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hosting &amp; Care Plans — Castle Rock Tech</title>
-  <meta name="description" content="Managed hosting and care plans for local small businesses in Castle Rock and the Front Range. Fixed monthly pricing, security, backups, and content updates." />
+  <title>Hosting &amp; Care Plans · Castle Rock Tech</title>
+  <meta name="description" content="Managed hosting and care plans for local Colorado businesses. Fixed monthly pricing, security, backups, and content updates." />
   <link rel="canonical" href="https://crtech.ai/hosting-maintenance.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Castle Rock Tech" />
-  <meta property="og:title" content="Hosting & Care Plans — Castle Rock Tech" />
-  <meta property="og:description" content="Managed hosting and care plans for local small businesses in Castle Rock and the Front Range. Fixed monthly pricing, security, backups, and content updates." />
+  <meta property="og:title" content="Hosting & Care Plans · Castle Rock Tech" />
+  <meta property="og:description" content="Managed hosting and care plans for local Colorado businesses. Fixed monthly pricing, security, backups, and content updates." />
   <meta property="og:url" content="https://crtech.ai/hosting-maintenance.html" />
   <meta property="og:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hosting & Care Plans — Castle Rock Tech" />
-  <meta name="twitter:description" content="Managed hosting and care plans for local small businesses in Castle Rock and the Front Range. Fixed monthly pricing, security, backups, and content updates." />
+  <meta name="twitter:title" content="Hosting & Care Plans · Castle Rock Tech" />
+  <meta name="twitter:description" content="Managed hosting and care plans for local Colorado businesses. Fixed monthly pricing, security, backups, and content updates." />
   <meta name="twitter:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,12 +31,19 @@
         </a>
         <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
         <ul class="nav__menu">
-          <li><a href="web-design-build.html" class="nav__link">Web Design &amp; Build</a></li>
-          <li><a href="hosting-maintenance.html" class="nav__link is-active">Hosting &amp; Maintenance</a></li>
-          <li><a href="ai-solutions.html" class="nav__link">AI Solutions</a></li>
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#services" class="nav__link nav__link--dropdown is-active" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="nav__submenu" role="menu">
+              <li><a href="web-design-build.html" role="menuitem">Web Design &amp; Build</a></li>
+              <li><a href="local-search.html" role="menuitem">Local Search Optimization</a></li>
+              <li><a href="hosting-maintenance.html" role="menuitem" class="is-active">Hosting &amp; Care</a></li>
+              <li><a href="ai-solutions.html" role="menuitem">AI Enablement</a></li>
+            </ul>
+          </li>
           <li><a href="about.html" class="nav__link">About</a></li>
           <li><a href="contact.html" class="nav__link">Contact</a></li>
-          <li><a href="contact.html" class="nav__cta">Book Free Call</a></li>
+          <li><a href="contact.html" class="nav__cta">Book a Call</a></li>
         </ul>
       </nav>
     </div>
@@ -49,12 +56,11 @@
           <span class="hero__eyebrow">Hosting &amp; Care Plans</span>
           <h1>Keep your site running, secure, <span class="accent">and improving every month.</span></h1>
           <p class="hero__lead">
-            Fixed-price hosting and care for local small businesses around Castle Rock and the Front
-            Range. Backups, security, updates, and real content edits — handled by your neighbors. No
-            surprise invoices, no jargon.
+            Fixed-price hosting and care for local Colorado businesses. Backups, security, updates, and
+            real content edits, handled by your neighbors. No surprise invoices, no jargon.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="contact.html">Book Free Discovery Call</a>
+            <a class="btn btn--primary" href="contact.html">Book a Free Call</a>
             <a class="btn btn--ghost" href="#plans">See Care Plans</a>
           </div>
         </div>
@@ -66,9 +72,9 @@
         <div class="section__head">
           <span class="section__eyebrow">Hosting &amp; Care Plans · Monthly subscription</span>
           <h2>Pick the plan that matches how much you publish.</h2>
-          <p class="muted">10% off when you prepay annually. Switch plans anytime — no contracts, no penalties.</p>
+          <p class="muted">10% off when you prepay annually. Switch plans anytime. No contracts, no penalties.</p>
         </div>
-        <div class="grid grid--2">
+        <div class="grid grid--3">
           <article class="pricing-card">
             <div class="pricing-card__head">
               <h3 class="pricing-card__name">Essential</h3>
@@ -97,15 +103,34 @@
               <li>Everything in Essential</li>
               <li>Up to 4 content updates per month</li>
               <li>Monthly performance report</li>
-              <li>Basic SEO health check</li>
+              <li>Local search health check</li>
               <li>Priority email support <span class="muted">(24-hour response)</span></li>
             </ul>
             <a class="btn btn--primary pricing-card__cta" href="contact.html">Start with Standard</a>
           </article>
+
+          <article class="pricing-card">
+            <div class="pricing-card__head">
+              <h3 class="pricing-card__name">Partner</h3>
+              <div class="pricing-card__price">$599<small>/mo</small></div>
+            </div>
+            <p class="pricing-card__meta">For owners who want us on retainer as an ongoing part of the team.</p>
+            <ul>
+              <li>Everything in Standard</li>
+              <li>Unlimited small content updates</li>
+              <li>Quarterly strategy call</li>
+              <li>Priority scheduling for new work</li>
+              <li>Discounted rates on larger projects</li>
+            </ul>
+            <a class="btn btn--dark pricing-card__cta" href="contact.html">Talk about Partner</a>
+          </article>
         </div>
         <p class="fine-print">
-          Existing-client bundle discount: 15% off when you add a second service.
-          Coming soon: <strong>Partner Care Plan</strong> for owners who want us on retainer — ask about early access.
+          Existing-client bundle discount: 15% off when you add a second service. All plans are
+          month-to-month.
+        </p>
+        <p style="margin-top: 24px; text-align: center;">
+          <a class="btn btn--dark" href="assets/documents/CastleRockTech_Services_2026.pdf" target="_blank" rel="noopener">Download Services Overview (PDF)</a>
         </p>
       </div>
     </section>
@@ -127,7 +152,7 @@
           </div>
           <div class="value" style="background: rgba(255,255,255,0.04); border-left-color: var(--rust-400);">
             <h4 style="color: var(--white);">Uptime</h4>
-            <p style="color: rgba(255,255,255,0.72);">If your site goes down, we know before you do — and we get it back up.</p>
+            <p style="color: rgba(255,255,255,0.72);">If your site goes down, we know before you do, and we get it back up.</p>
           </div>
           <div class="value" style="background: rgba(255,255,255,0.04); border-left-color: var(--rust-400);">
             <h4 style="color: var(--white);">Real Humans</h4>
@@ -145,10 +170,10 @@
             <h2>Start with a free Discovery Call.</h2>
             <p>
               30 minutes, no pitch. We'll review your current site and email you a written recommendation
-              within 48 hours — no obligation, no follow-up unless you want one.
+              within 48 hours. No obligation, no follow-up unless you want one.
             </p>
           </div>
-          <a class="btn btn--primary" href="contact.html">Book Free Call</a>
+          <a class="btn btn--primary" href="contact.html">Book a Free Call</a>
         </div>
       </div>
     </section>
@@ -159,14 +184,15 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/CRTLogo_1.1.png" alt="Castle Rock Tech" />
-          <p>Solid as the rock. Built for tomorrow.</p>
+          <p>Web Design, Local Search, Hosting &amp; AI for Local Business.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
             <li><a href="web-design-build.html">Web Design &amp; Build</a></li>
-            <li><a href="hosting-maintenance.html">Hosting &amp; Maintenance</a></li>
-            <li><a href="ai-solutions.html">AI Solutions</a></li>
+            <li><a href="local-search.html">Local Search Optimization</a></li>
+            <li><a href="hosting-maintenance.html">Hosting &amp; Care</a></li>
+            <li><a href="ai-solutions.html">AI Enablement</a></li>
           </ul>
         </div>
         <div>
@@ -180,8 +206,8 @@
         <div>
           <h4>Get In Touch</h4>
           <ul>
-            <li>hello@crtech.ai</li>
-            <li>720.925.2986</li>
+            <li><a href="mailto:adam@crtech.ai">adam@crtech.ai</a></li>
+            <li><a href="tel:+17209252986">720.925.2986</a></li>
             <li>Castle Rock, Colorado</li>
           </ul>
         </div>

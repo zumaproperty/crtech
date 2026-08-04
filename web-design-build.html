@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Design &amp; Build — Castle Rock Tech</title>
-  <meta name="description" content="Credible, fast websites for local small businesses in Castle Rock and the Front Range. Fixed prices, no surprise invoices, no jargon." />
+  <title>Web Design &amp; Build · Castle Rock Tech</title>
+  <meta name="description" content="Credible, fast websites for local Colorado businesses. Fixed prices, no surprise invoices, no jargon." />
   <link rel="canonical" href="https://crtech.ai/web-design-build.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Castle Rock Tech" />
-  <meta property="og:title" content="Web Design & Build — Castle Rock Tech" />
-  <meta property="og:description" content="Credible, fast websites for local small businesses in Castle Rock and the Front Range. Fixed prices, no surprise invoices, no jargon." />
+  <meta property="og:title" content="Web Design & Build · Castle Rock Tech" />
+  <meta property="og:description" content="Credible, fast websites for local Colorado businesses. Fixed prices, no surprise invoices, no jargon." />
   <meta property="og:url" content="https://crtech.ai/web-design-build.html" />
   <meta property="og:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Web Design & Build — Castle Rock Tech" />
-  <meta name="twitter:description" content="Credible, fast websites for local small businesses in Castle Rock and the Front Range. Fixed prices, no surprise invoices, no jargon." />
+  <meta name="twitter:title" content="Web Design & Build · Castle Rock Tech" />
+  <meta name="twitter:description" content="Credible, fast websites for local Colorado businesses. Fixed prices, no surprise invoices, no jargon." />
   <meta name="twitter:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,12 +31,19 @@
         </a>
         <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
         <ul class="nav__menu">
-          <li><a href="web-design-build.html" class="nav__link is-active">Web Design &amp; Build</a></li>
-          <li><a href="hosting-maintenance.html" class="nav__link">Hosting &amp; Maintenance</a></li>
-          <li><a href="ai-solutions.html" class="nav__link">AI Solutions</a></li>
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#services" class="nav__link nav__link--dropdown is-active" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="nav__submenu" role="menu">
+              <li><a href="web-design-build.html" role="menuitem" class="is-active">Web Design &amp; Build</a></li>
+              <li><a href="local-search.html" role="menuitem">Local Search Optimization</a></li>
+              <li><a href="hosting-maintenance.html" role="menuitem">Hosting &amp; Care</a></li>
+              <li><a href="ai-solutions.html" role="menuitem">AI Enablement</a></li>
+            </ul>
+          </li>
           <li><a href="about.html" class="nav__link">About</a></li>
           <li><a href="contact.html" class="nav__link">Contact</a></li>
-          <li><a href="contact.html" class="nav__cta">Book Free Call</a></li>
+          <li><a href="contact.html" class="nav__cta">Book a Call</a></li>
         </ul>
       </nav>
     </div>
@@ -49,12 +56,12 @@
           <span class="hero__eyebrow">Web Design &amp; Build</span>
           <h1>Websites that work <span class="accent">as hard as you do.</span></h1>
           <p class="hero__lead">
-            We build clear, credible websites for local small businesses here in Castle Rock and across
-            the Front Range — then quietly keep them running so you never have to think about it. Fixed
-            prices, no surprise invoices, no jargon.
+            We build websites for local Colorado businesses, and we help them show up in local search.
+            Fast, credible sites that turn traffic into leads. Then we quietly keep them running so you
+            never have to think about it. Fixed prices, no surprise invoices, no jargon.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="contact.html">Book Free Discovery Call</a>
+            <a class="btn btn--primary" href="contact.html">Book a Free Call</a>
             <a class="btn btn--ghost" href="#packages">See Packages &amp; Pricing</a>
           </div>
         </div>
@@ -65,7 +72,7 @@
       <div class="container">
         <div class="section__head">
           <span class="section__eyebrow">Web Design &amp; Build · Project-based, fixed price</span>
-          <h2>Two ways to launch — pick the one that fits.</h2>
+          <h2>Two ways to launch. Pick the one that fits.</h2>
           <p class="muted">
             Every build is mobile-responsive, accessibility-aware, and tuned for search and speed from
             day one. Pick a starting point; we'll confirm scope on the Discovery Call.
@@ -81,7 +88,7 @@
             <ul>
               <li>Up to 5 pages</li>
               <li>Mobile-responsive design</li>
-              <li>Basic SEO setup</li>
+              <li>Local search setup</li>
               <li>Contact form</li>
               <li>Google Business Profile sync</li>
             </ul>
@@ -108,7 +115,14 @@
         </div>
         <p class="fine-print">
           Existing-client bundle discount: 15% off when you add a second service.
-          Coming soon: <strong>Custom Builds</strong> for owners with bigger ambitions — ask about early access.
+          Coming soon: <strong>Custom Builds</strong> for owners with bigger ambitions. Ask about early access.
+        </p>
+        <p class="fine-print" style="margin-top: 8px;">
+          Already ranking is half the job. Pair a build with our <a href="local-search.html">Local Search Optimization</a>
+          service to make sure prospects can actually find you.
+        </p>
+        <p style="margin-top: 24px; text-align: center;">
+          <a class="btn btn--dark" href="assets/documents/CastleRockTech_Services_2026.pdf" target="_blank" rel="noopener">Download Services Overview (PDF)</a>
         </p>
       </div>
     </section>
@@ -130,7 +144,7 @@
           </div>
           <div class="value">
             <h4>03 · Build</h4>
-            <p>Production-ready site with SEO, analytics, and CMS hand-off — shipped in 2 to 4 weeks.</p>
+            <p>Production-ready site with local search setup, analytics, and CMS hand-off. Shipped in 2 to 4 weeks.</p>
           </div>
           <div class="value">
             <h4>04 · Maintain</h4>
@@ -148,10 +162,10 @@
             <h2>Start with a free Discovery Call.</h2>
             <p>
               30 minutes, no pitch. We'll review your current site and email you a written recommendation
-              within 48 hours — no obligation, no follow-up unless you want one.
+              within 48 hours. No obligation, no follow-up unless you want one.
             </p>
           </div>
-          <a class="btn btn--primary" href="contact.html">Book Free Call</a>
+          <a class="btn btn--primary" href="contact.html">Book a Free Call</a>
         </div>
       </div>
     </section>
@@ -162,14 +176,15 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/CRTLogo_1.1.png" alt="Castle Rock Tech" />
-          <p>Solid as the rock. Built for tomorrow.</p>
+          <p>Web Design, Local Search, Hosting &amp; AI for Local Business.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
             <li><a href="web-design-build.html">Web Design &amp; Build</a></li>
-            <li><a href="hosting-maintenance.html">Hosting &amp; Maintenance</a></li>
-            <li><a href="ai-solutions.html">AI Solutions</a></li>
+            <li><a href="local-search.html">Local Search Optimization</a></li>
+            <li><a href="hosting-maintenance.html">Hosting &amp; Care</a></li>
+            <li><a href="ai-solutions.html">AI Enablement</a></li>
           </ul>
         </div>
         <div>
@@ -183,8 +198,8 @@
         <div>
           <h4>Get In Touch</h4>
           <ul>
-            <li>hello@crtech.ai</li>
-            <li>720.925.2986</li>
+            <li><a href="mailto:adam@crtech.ai">adam@crtech.ai</a></li>
+            <li><a href="tel:+17209252986">720.925.2986</a></li>
             <li>Castle Rock, Colorado</li>
           </ul>
         </div>

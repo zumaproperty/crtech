@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Castle Rock Tech — Local Web, Hosting &amp; AI for Small Businesses</title>
-  <meta name="description" content="A small, local team in Castle Rock, Colorado helping small business owners with websites, hosting, and practical AI — no jargon, no surprise invoices." />
+  <title>Castle Rock Tech: Web Design, Local Search, Hosting &amp; AI for Local Business</title>
+  <meta name="description" content="A small studio in Castle Rock, Colorado helping local businesses show up online. Websites, Google Business Profile, hosting, and practical AI. Fixed prices, no surprise invoices, no jargon." />
   <link rel="canonical" href="https://crtech.ai/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Castle Rock Tech" />
-  <meta property="og:title" content="Castle Rock Tech — Local Web, Hosting & AI for Small Businesses" />
-  <meta property="og:description" content="A small, local team in Castle Rock, Colorado helping small business owners with websites, hosting, and practical AI — no jargon, no surprise invoices." />
+  <meta property="og:title" content="Castle Rock Tech: Web Design, Local Search, Hosting & AI for Local Business" />
+  <meta property="og:description" content="A small studio in Castle Rock, Colorado helping local businesses show up online. Websites, Google Business Profile, hosting, and practical AI. Fixed prices, no surprise invoices, no jargon." />
   <meta property="og:url" content="https://crtech.ai/" />
   <meta property="og:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Castle Rock Tech — Local Web, Hosting & AI for Small Businesses" />
-  <meta name="twitter:description" content="A small, local team in Castle Rock, Colorado helping small business owners with websites, hosting, and practical AI — no jargon, no surprise invoices." />
+  <meta name="twitter:title" content="Castle Rock Tech: Web Design, Local Search, Hosting & AI for Local Business" />
+  <meta name="twitter:description" content="A small studio in Castle Rock, Colorado helping local businesses show up online. Websites, Google Business Profile, hosting, and practical AI. Fixed prices, no surprise invoices, no jargon." />
   <meta name="twitter:image" content="https://crtech.ai/assets/images/og-card.jpg" />
   <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,12 +31,19 @@
         </a>
         <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
         <ul class="nav__menu">
-          <li><a href="web-design-build.html" class="nav__link">Web Design &amp; Build</a></li>
-          <li><a href="hosting-maintenance.html" class="nav__link">Hosting &amp; Maintenance</a></li>
-          <li><a href="ai-solutions.html" class="nav__link">AI Solutions</a></li>
+          <li><a href="index.html" class="nav__link is-active">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#services" class="nav__link nav__link--dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="nav__submenu" role="menu">
+              <li><a href="web-design-build.html" role="menuitem">Web Design &amp; Build</a></li>
+              <li><a href="local-search.html" role="menuitem">Local Search Optimization</a></li>
+              <li><a href="hosting-maintenance.html" role="menuitem">Hosting &amp; Care</a></li>
+              <li><a href="ai-solutions.html" role="menuitem">AI Enablement</a></li>
+            </ul>
+          </li>
           <li><a href="about.html" class="nav__link">About</a></li>
           <li><a href="contact.html" class="nav__link">Contact</a></li>
-          <li><a href="contact.html" class="nav__cta">Start a Project</a></li>
+          <li><a href="contact.html" class="nav__cta">Book a Call</a></li>
         </ul>
       </nav>
     </div>
@@ -47,44 +54,50 @@
       <div class="container">
         <div class="hero__inner">
           <span class="hero__eyebrow">Castle Rock, Colorado</span>
-          <h1>Your local tech team. <span class="accent">Without the headache.</span></h1>
+          <h1>Websites that work <span class="accent">as hard as you do.</span></h1>
           <p class="hero__lead">
-            We're a small team here in Castle Rock helping local small business owners get a website
-            they're proud of, keep it running smoothly, and put AI to work on the busywork that's
-            eating their day. Plain English, fixed prices, real people who pick up the phone.
+            We help local Colorado businesses show up online and turn visitors into customers.
+            Websites, Google Business Profile, hosting, and everything in between. Fixed prices,
+            no surprise invoices, no jargon.
           </p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="contact.html">Book a Free Call</a>
-            <a class="btn btn--ghost" href="#what-we-do">See What We Do</a>
+            <a class="btn btn--ghost" href="#services">See What We Do</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="what-we-do">
+    <section class="section" id="services">
       <div class="container">
         <div class="section__head">
           <span class="section__eyebrow">What We Do</span>
-          <h2>Three things we do. One local team.</h2>
-          <p class="muted">Built right, kept running, and quietly getting smarter — all from a small team right here in Castle Rock.</p>
+          <h2>Four ways we help you show up online.</h2>
+          <p class="muted">Built right, kept running, and quietly getting smarter, all from a small studio right here in Castle Rock.</p>
         </div>
-        <div class="grid grid--3">
+        <div class="grid grid--2">
           <article class="card">
-            <div class="card__icon">1</div>
+            <span class="card__eyebrow">Get Found Online</span>
+            <h3>Local Search Optimization</h3>
+            <p>Google Business Profile optimization. Show up when local prospects search for your business.</p>
+            <a class="card__link" href="local-search.html">Learn more</a>
+          </article>
+          <article class="card">
+            <span class="card__eyebrow">Convert Visitors</span>
             <h3>Web Design &amp; Build</h3>
-            <p>A clear, credible website that helps people find you and reach out — built for the way you actually run your business.</p>
+            <p>Fast, credible websites that turn traffic into leads and customers.</p>
             <a class="card__link" href="web-design-build.html">Learn more</a>
           </article>
           <article class="card">
-            <div class="card__icon">2</div>
-            <h3>Hosting &amp; Maintenance</h3>
-            <p>We host it, back it up, and quietly handle the updates so you never have to think about plugins, SSL, or who's running your site.</p>
+            <span class="card__eyebrow">Keep It Running</span>
+            <h3>Hosting &amp; Care Plans</h3>
+            <p>Ongoing hosting, security, updates, and small content changes.</p>
             <a class="card__link" href="hosting-maintenance.html">Learn more</a>
           </article>
           <article class="card">
-            <div class="card__icon">3</div>
-            <h3>AI Solutions</h3>
-            <p>Practical AI that handles after-hours questions, repetitive emails, and the busywork — so you can get back to running the business.</p>
+            <span class="card__eyebrow">Modernize</span>
+            <h3>AI Enablement</h3>
+            <p>Practical AI for after-hours inquiries, booking, and workflow automation.</p>
             <a class="card__link" href="ai-solutions.html">Learn more</a>
           </article>
         </div>
@@ -96,26 +109,26 @@
         <div class="section__head">
           <span class="section__eyebrow">Recent Work</span>
           <h2>A few local businesses we've built with.</h2>
-          <p class="muted">A couple of recent projects — more on the way.</p>
+          <p class="muted">A couple of recent projects. More on the way.</p>
         </div>
         <div class="grid grid--2">
           <article class="work-card">
             <a class="work-card__link" href="https://www.zumaproperty.com" target="_blank" rel="noopener">
-              <div class="work-card__media"><img src="assets/images/work/zuma-property.jpg" alt="Zuma Property Management — vacation rentals in Summit County, Colorado" loading="lazy" /></div>
+              <div class="work-card__media"><img src="assets/images/work/zuma-property.jpg" alt="Zuma Property Management, vacation rentals in Summit County, Colorado" loading="lazy" /></div>
               <div class="work-card__body">
                 <span class="work-card__eyebrow">Web Design &amp; Build</span>
                 <h3>Zuma Property Management · Vacation Rentals</h3>
-                <p>Luxury vacation-rental management for Summit County, Colorado — Breckenridge, Silverthorne, Keystone, and Frisco. 3,000+ stays, 4.9-star rating across 1,000+ guest reviews.</p>
+                <p>Luxury vacation-rental management for Summit County, Colorado: Breckenridge, Silverthorne, Keystone, and Frisco. 3,000+ stays, 4.9-star rating across 1,000+ guest reviews.</p>
               </div>
             </a>
           </article>
           <article class="work-card">
             <a class="work-card__link" href="https://fpconcrete.com" target="_blank" rel="noopener">
-              <div class="work-card__media"><img src="assets/images/work/final-phase-concrete.jpg" alt="Final Phase Concrete — concrete flat work and coatings" loading="lazy" /></div>
+              <div class="work-card__media"><img src="assets/images/work/final-phase-concrete.jpg" alt="Final Phase Concrete, flat work and coatings" loading="lazy" /></div>
               <div class="work-card__body">
                 <span class="work-card__eyebrow">Web Design &amp; Build</span>
                 <h3>Final Phase Concrete · Concrete Contractor</h3>
-                <p>A clean, no-fuss website for a Colorado concrete contractor — clear info on flat work and decorative coatings, with an easy way for customers to ask for a quote.</p>
+                <p>A clean, no-fuss website for a Colorado concrete contractor. Clear info on flat work and decorative coatings, with an easy way for customers to ask for a quote.</p>
               </div>
             </a>
           </article>
@@ -130,9 +143,9 @@
             <span class="section__eyebrow">Our Approach</span>
             <h2>Local, friendly, and built around how you actually run your business.</h2>
             <p>
-              We're a small shop based right here in Castle Rock — neighbors, parents, regulars at the
+              We're a small shop based right here in Castle Rock. Neighbors, parents, regulars at the
               same coffee shops you go to. We work with small business owners across Castle Rock and
-              the Front Range who want straight answers and someone they can actually call.
+              the south metro who want straight answers and someone they can actually call.
             </p>
             <p>
               Every project starts with a free 30-minute chat. We explain things in plain English, give
@@ -161,14 +174,15 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/CRTLogo_1.1.png" alt="Castle Rock Tech" />
-          <p>Solid as the rock. Built for tomorrow.</p>
+          <p>Web Design, Local Search, Hosting &amp; AI for Local Business.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
             <li><a href="web-design-build.html">Web Design &amp; Build</a></li>
-            <li><a href="hosting-maintenance.html">Hosting &amp; Maintenance</a></li>
-            <li><a href="ai-solutions.html">AI Solutions</a></li>
+            <li><a href="local-search.html">Local Search Optimization</a></li>
+            <li><a href="hosting-maintenance.html">Hosting &amp; Care</a></li>
+            <li><a href="ai-solutions.html">AI Enablement</a></li>
           </ul>
         </div>
         <div>
@@ -182,7 +196,8 @@
         <div>
           <h4>Get In Touch</h4>
           <ul>
-            <li>hello@crtech.ai</li>
+            <li><a href="mailto:adam@crtech.ai">adam@crtech.ai</a></li>
+            <li><a href="tel:+17209252986">720.925.2986</a></li>
             <li>Castle Rock, Colorado</li>
           </ul>
         </div>
